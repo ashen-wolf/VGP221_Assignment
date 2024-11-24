@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-VGP221_Thom_Piper_A1-0001.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\User\Documents\Unreal Projects\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\VGP221_Thom_Piper_A1Editor\Development\Engine\SharedPCH.Engine.Cpp20.h.obj"
+"C:\Users\User\Documents\Unreal Projects\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\UnrealEditor\Development\VGP221_Thom_Piper_A1\FloatingActor.gen.cpp.obj"
+"C:\Users\User\Documents\Unreal Projects\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\UnrealEditor\Development\VGP221_Thom_Piper_A1\VGP221_Thom_Piper_A1.init.gen.cpp.obj"
+"C:\Users\User\Documents\Unreal Projects\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\UnrealEditor\Development\VGP221_Thom_Piper_A1\FloatingActor.cpp.obj"
+"C:\Users\User\Documents\Unreal Projects\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\UnrealEditor\Development\VGP221_Thom_Piper_A1\VGP221_Thom_Piper_A1.cpp.obj"
+"C:\Users\User\Documents\Unreal Projects\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\UnrealEditor\Development\VGP221_Thom_Piper_A1\Default.rc2.res"
+/OUT:"C:\Users\User\Documents\Unreal Projects\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\UnrealEditor\Development\VGP221_Thom_Piper_A1\UnrealEditor-VGP221_Thom_Piper_A1-0001.lib"
