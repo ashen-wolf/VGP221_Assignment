@@ -1,11 +1,11 @@
-"C:\Users\User\Documents\Unreal Projects\VGP221_Thom_Piper_A1\Source\VGP221_Thom_Piper_A1\VGP221_Thom_Piper_A1.cpp"
-/FI"C:\Users\User\Documents\Unreal Projects\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\VGP221_Thom_Piper_A1Editor\Development\Engine\SharedPCH.Engine.Cpp20.h"
-/FI"C:\Users\User\Documents\Unreal Projects\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\UnrealEditor\Development\VGP221_Thom_Piper_A1\Definitions.VGP221_Thom_Piper_A1.h"
-/Yu"C:\Users\User\Documents\Unreal Projects\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\VGP221_Thom_Piper_A1Editor\Development\Engine\SharedPCH.Engine.Cpp20.h"
-/Fp"C:\Users\User\Documents\Unreal Projects\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\VGP221_Thom_Piper_A1Editor\Development\Engine\SharedPCH.Engine.Cpp20.h.pch"
-/Fo"C:\Users\User\Documents\Unreal Projects\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\UnrealEditor\Development\VGP221_Thom_Piper_A1\VGP221_Thom_Piper_A1.cpp.obj"
-/sourceDependencies "C:\Users\User\Documents\Unreal Projects\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\UnrealEditor\Development\VGP221_Thom_Piper_A1\VGP221_Thom_Piper_A1.cpp.dep.json"
-@"C:\Users\User\Documents\Unreal Projects\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\UnrealEditor\Development\VGP221_Thom_Piper_A1\VGP221_Thom_Piper_A1.Shared.rsp"
+"C:\Users\User\VGP221_Assignment\VGP221_Thom_Piper_A1\Source\VGP221_Thom_Piper_A1\VGP221_Thom_Piper_A1.cpp"
+/FI"C:\Users\User\VGP221_Assignment\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\VGP221_Thom_Piper_A1Editor\Development\Engine\SharedPCH.Engine.Cpp20.h"
+/FI"C:\Users\User\VGP221_Assignment\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\UnrealEditor\Development\VGP221_Thom_Piper_A1\Definitions.VGP221_Thom_Piper_A1.h"
+/Yu"C:\Users\User\VGP221_Assignment\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\VGP221_Thom_Piper_A1Editor\Development\Engine\SharedPCH.Engine.Cpp20.h"
+/Fp"C:\Users\User\VGP221_Assignment\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\VGP221_Thom_Piper_A1Editor\Development\Engine\SharedPCH.Engine.Cpp20.h.pch"
+/Fo"C:\Users\User\VGP221_Assignment\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\UnrealEditor\Development\VGP221_Thom_Piper_A1\VGP221_Thom_Piper_A1.cpp.obj"
+/sourceDependencies "C:\Users\User\VGP221_Assignment\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\UnrealEditor\Development\VGP221_Thom_Piper_A1\VGP221_Thom_Piper_A1.cpp.dep.json"
+@"C:\Users\User\VGP221_Assignment\VGP221_Thom_Piper_A1\Intermediate\Build\Win64\x64\UnrealEditor\Development\VGP221_Thom_Piper_A1\VGP221_Thom_Piper_A1.Shared.rsp"
 /Zc:inline
 /nologo
 /Oi

@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Documents\\Unreal Projects\\VGP221_Thom_Piper_A1\\Intermediate\\Build\\BuildRulesProjects\\VGP221_Thom_Piper_A1ModuleRules\\VGP221_Thom_Piper_A1ModuleRules.csproj": {}
+    "C:\\Users\\User\\VGP221_Assignment\\VGP221_Thom_Piper_A1\\Intermediate\\Build\\BuildRulesProjects\\VGP221_Thom_Piper_A1ModuleRules\\VGP221_Thom_Piper_A1ModuleRules.csproj": {}
   },
   "projects": {
     "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5ProgramRules\\UE5ProgramRules.csproj": {
@@ -1073,14 +1073,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Documents\\Unreal Projects\\VGP221_Thom_Piper_A1\\Intermediate\\Build\\BuildRulesProjects\\VGP221_Thom_Piper_A1ModuleRules\\VGP221_Thom_Piper_A1ModuleRules.csproj": {
+    "C:\\Users\\User\\VGP221_Assignment\\VGP221_Thom_Piper_A1\\Intermediate\\Build\\BuildRulesProjects\\VGP221_Thom_Piper_A1ModuleRules\\VGP221_Thom_Piper_A1ModuleRules.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\Unreal Projects\\VGP221_Thom_Piper_A1\\Intermediate\\Build\\BuildRulesProjects\\VGP221_Thom_Piper_A1ModuleRules\\VGP221_Thom_Piper_A1ModuleRules.csproj",
+        "projectUniqueName": "C:\\Users\\User\\VGP221_Assignment\\VGP221_Thom_Piper_A1\\Intermediate\\Build\\BuildRulesProjects\\VGP221_Thom_Piper_A1ModuleRules\\VGP221_Thom_Piper_A1ModuleRules.csproj",
         "projectName": "VGP221_Thom_Piper_A1ModuleRules",
-        "projectPath": "C:\\Users\\User\\Documents\\Unreal Projects\\VGP221_Thom_Piper_A1\\Intermediate\\Build\\BuildRulesProjects\\VGP221_Thom_Piper_A1ModuleRules\\VGP221_Thom_Piper_A1ModuleRules.csproj",
+        "projectPath": "C:\\Users\\User\\VGP221_Assignment\\VGP221_Thom_Piper_A1\\Intermediate\\Build\\BuildRulesProjects\\VGP221_Thom_Piper_A1ModuleRules\\VGP221_Thom_Piper_A1ModuleRules.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\Unreal Projects\\VGP221_Thom_Piper_A1\\Intermediate\\Build\\BuildRulesProjects\\VGP221_Thom_Piper_A1ModuleRules\\obj\\",
+        "outputPath": "C:\\Users\\User\\VGP221_Assignment\\VGP221_Thom_Piper_A1\\Intermediate\\Build\\BuildRulesProjects\\VGP221_Thom_Piper_A1ModuleRules\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

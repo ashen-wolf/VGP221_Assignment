@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "92D69Bxn7pE=",
+  "dgSpecHash": "nJQj5V6bCPc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Documents\\Unreal Projects\\VGP221_Thom_Piper_A1\\Intermediate\\Build\\BuildRulesProjects\\VGP221_Thom_Piper_A1ModuleRules\\VGP221_Thom_Piper_A1ModuleRules.csproj",
+  "projectFilePath": "C:\\Users\\User\\VGP221_Assignment\\VGP221_Thom_Piper_A1\\Intermediate\\Build\\BuildRulesProjects\\VGP221_Thom_Piper_A1ModuleRules\\VGP221_Thom_Piper_A1ModuleRules.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\blake3\\0.5.1\\blake3.0.5.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
