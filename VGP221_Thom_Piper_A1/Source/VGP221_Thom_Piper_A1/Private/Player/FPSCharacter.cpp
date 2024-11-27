@@ -25,6 +25,8 @@ AFPSCharacter::AFPSCharacter()
 
 	GetMesh()->SetOwnerNoSee(true);
 
+	ProjectileClass = AFPSProjectile::StaticClass();
+
 	UE_LOG(LogTemp, Warning, TEXT("Character Constructor is called!"));
 	
 }
@@ -82,7 +84,41 @@ void AFPSCharacter::Strafe(float value)
 
 void AFPSCharacter::Fire()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Fired"))
+	if (ProjectileClass)
+	{
+		// Get the camera transform.
+		FVector CameraLocation;
+		FRotator CameraRotation;
+		GetActorEyesViewPoint(CameraLocation, CameraRotation);
+
+		// Set MuzzleOffset to spawn projectiles slightly in front of the camera.
+		MuzzleOffset.Set(100.0f, 0.0f, 0.0f);
+
+		// Transform MuzzleOffset from camera space to world space.
+		FVector MuzzleLocation = CameraLocation + FTransform(CameraRotation).TransformVector(MuzzleOffset);
+
+		// Skew the aim to be slightly upwards.
+		FRotator MuzzleRotation = CameraRotation;
+		MuzzleRotation.Pitch += 10.0f;
+
+		UWorld* World = GetWorld();
+		if (!World) return;
+		
+		FActorSpawnParameters SpawnParams;
+		SpawnParams.Owner = this;
+		SpawnParams.Instigator = GetInstigator();
+
+		// Spawn the projectile at the muzzle.
+		AFPSProjectile* Projectile = World->SpawnActor<AFPSProjectile>(ProjectileClass, MuzzleLocation, MuzzleRotation, SpawnParams);
+
+		if (!Projectile) return;
+		
+		// Set the projectile's initial trajectory.
+		FVector LaunchDirection = MuzzleRotation.Vector();
+		Projectile->FireInDirection(LaunchDirection);
+		
+		
+	}
 }
 
 

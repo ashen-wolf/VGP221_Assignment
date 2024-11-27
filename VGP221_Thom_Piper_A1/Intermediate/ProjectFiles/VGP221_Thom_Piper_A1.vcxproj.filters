@@ -60,6 +60,12 @@
     <ClCompile Include="..\..\Source\VGP221_Thom_Piper_A1\Private\Player\FPSCharacter.cpp">
       <Filter>Source\VGP221_Thom_Piper_A1\Private\Player</Filter>
     </ClCompile>
+    <Filter Include="Source\VGP221_Thom_Piper_A1\Private\Projectile">
+      <UniqueIdentifier>{5C065712-C545-362A-84A7-DEF1A788C2E7}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\VGP221_Thom_Piper_A1\Private\Projectile\FPSProjectile.cpp">
+      <Filter>Source\VGP221_Thom_Piper_A1\Private\Projectile</Filter>
+    </ClCompile>
     <Filter Include="Source\VGP221_Thom_Piper_A1\Public">
       <UniqueIdentifier>{44D383D3-86F6-39F4-ADE1-73D67E0992F5}</UniqueIdentifier>
     </Filter>
@@ -74,6 +80,12 @@
     </Filter>
     <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\Player\FPSCharacter.h">
       <Filter>Source\VGP221_Thom_Piper_A1\Public\Player</Filter>
+    </ClInclude>
+    <Filter Include="Source\VGP221_Thom_Piper_A1\Public\Projectile">
+      <UniqueIdentifier>{83403B11-AFF5-31D3-8091-81BCD4244E44}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\Projectile\FPSProjectile.h">
+      <Filter>Source\VGP221_Thom_Piper_A1\Public\Projectile</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

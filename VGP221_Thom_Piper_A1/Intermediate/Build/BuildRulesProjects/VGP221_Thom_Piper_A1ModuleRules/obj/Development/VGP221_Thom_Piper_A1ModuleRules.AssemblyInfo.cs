@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VGP221_Thom_Piper_A1ModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e454265d5c2b90f1c13b30c1992756cbc5c3a576")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56322a1b2402604159171712b0c477714beb969b")]
 [assembly: System.Reflection.AssemblyProductAttribute("VGP221_Thom_Piper_A1ModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VGP221_Thom_Piper_A1ModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
