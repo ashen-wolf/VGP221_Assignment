@@ -7,7 +7,6 @@
 			"files": [
 				"C:/Users/User/VGP221_Assignment/VGP221_Thom_Piper_A1/Content/Blueprints/BP_FPSGameMode.uasset",
 				"C:/Users/User/VGP221_Assignment/VGP221_Thom_Piper_A1/Content/Levels/FPSMap.umap",
-				"C:/Users/User/VGP221_Assignment/VGP221_Thom_Piper_A1/Content/Blueprints/BP_FPSCharacter.uasset",
 				"C:/Users/User/VGP221_Assignment/VGP221_Thom_Piper_A1/Content/Mesh/Projectile/Fbx_Default_Material.uasset",
 				"C:/Users/User/VGP221_Assignment/VGP221_Thom_Piper_A1/Content/Mesh/Projectile/Sphere.uasset",
 				"C:/Users/User/VGP221_Assignment/VGP221_Thom_Piper_A1/Content/Mesh/Player/GenericMale.uasset",
@@ -22,6 +21,9 @@
 				"C:/Users/User/VGP221_Assignment/VGP221_Thom_Piper_A1/Content/Material/M_Projectile.uasset",
 				"C:/Users/User/VGP221_Assignment/VGP221_Thom_Piper_A1/Content/Blueprints/Projectile/BP_FPSProjectile.uasset",
 				"C:/Users/User/VGP221_Assignment/VGP221_Thom_Piper_A1/Content/Blueprints/Player/BP_FPSCharacter.uasset",
+				"C:/Users/User/VGP221_Assignment/VGP221_Thom_Piper_A1/Content/Texture/crosshair.uasset",
+				"C:/Users/User/VGP221_Assignment/VGP221_Thom_Piper_A1/Content/Blueprints/HUD/BP_FPSHUD.uasset",
+				"C:/Users/User/VGP221_Assignment/VGP221_Thom_Piper_A1/Content/Blueprints/BP_FPSCharacter.uasset",
 				"C:/Users/User/VGP221_Assignment/VGP221_Thom_Piper_A1/Content/Blueprints/BP_FPSProjectile.uasset",
 				"C:/Users/User/VGP221_Assignment/VGP221_Thom_Piper_A1/Content/Material/M_ProjectileMaterial.uasset",
 				"C:/Users/User/VGP221_Assignment/VGP221_Thom_Piper_A1/Content/Blueprints/Projectile/BP_Projectile.uasset",

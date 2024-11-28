@@ -54,6 +54,27 @@
     <ClCompile Include="..\..\Source\VGP221_Thom_Piper_A1\Private\GameMode\FPSGameMode.cpp">
       <Filter>Source\VGP221_Thom_Piper_A1\Private\GameMode</Filter>
     </ClCompile>
+    <Filter Include="Source\VGP221_Thom_Piper_A1\Private\GUI">
+      <UniqueIdentifier>{9A5682F5-DEDC-3D0B-B992-EAC2AB1F2441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\VGP221_Thom_Piper_A1\Private\GUI\Slate">
+      <UniqueIdentifier>{CAEBDA97-7959-3104-8033-DF21C0AD610F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\VGP221_Thom_Piper_A1\Private\GUI\Slate\PleaseWork.cpp">
+      <Filter>Source\VGP221_Thom_Piper_A1\Private\GUI\Slate</Filter>
+    </ClCompile>
+    <Filter Include="Source\VGP221_Thom_Piper_A1\Private\GUI\Slates">
+      <UniqueIdentifier>{0E6E314C-F48C-39F6-A17E-399FCF344F8B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\VGP221_Thom_Piper_A1\Private\GUI\Slates\SSettingsWidget.cpp">
+      <Filter>Source\VGP221_Thom_Piper_A1\Private\GUI\Slates</Filter>
+    </ClCompile>
+    <Filter Include="Source\VGP221_Thom_Piper_A1\Private\HUD">
+      <UniqueIdentifier>{EEA33452-0C91-3C42-95E5-8BD6AE6CBAF8}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\VGP221_Thom_Piper_A1\Private\HUD\FPSHUD.cpp">
+      <Filter>Source\VGP221_Thom_Piper_A1\Private\HUD</Filter>
+    </ClCompile>
     <Filter Include="Source\VGP221_Thom_Piper_A1\Private\Player">
       <UniqueIdentifier>{046AA259-E02A-3AB0-8426-0F48014CCADC}</UniqueIdentifier>
     </Filter>
@@ -74,6 +95,27 @@
     </Filter>
     <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\GameMode\FPSGameMode.h">
       <Filter>Source\VGP221_Thom_Piper_A1\Public\GameMode</Filter>
+    </ClInclude>
+    <Filter Include="Source\VGP221_Thom_Piper_A1\Public\GUI">
+      <UniqueIdentifier>{F2428139-BD61-3A1C-8D2D-63C0C5C4038A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\VGP221_Thom_Piper_A1\Public\GUI\Slate">
+      <UniqueIdentifier>{1F89BAB1-20DF-38F2-916C-2C6A39CA085B}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\GUI\Slate\PleaseWork.h">
+      <Filter>Source\VGP221_Thom_Piper_A1\Public\GUI\Slate</Filter>
+    </ClInclude>
+    <Filter Include="Source\VGP221_Thom_Piper_A1\Public\GUI\Slates">
+      <UniqueIdentifier>{EAE57E96-1B5A-3D09-A09A-EEAD9E8B2900}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\GUI\Slates\SSettingsWidget.h">
+      <Filter>Source\VGP221_Thom_Piper_A1\Public\GUI\Slates</Filter>
+    </ClInclude>
+    <Filter Include="Source\VGP221_Thom_Piper_A1\Public\HUD">
+      <UniqueIdentifier>{1F059A1D-3A78-3D08-A6AD-62220E2E6FA5}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\HUD\FPSHUD.h">
+      <Filter>Source\VGP221_Thom_Piper_A1\Public\HUD</Filter>
     </ClInclude>
     <Filter Include="Source\VGP221_Thom_Piper_A1\Public\Player">
       <UniqueIdentifier>{D1498536-4F1C-39FE-826B-636FDE9A30CB}</UniqueIdentifier>
