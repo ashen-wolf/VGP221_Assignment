@@ -48,6 +48,15 @@
     <Filter Include="Source\VGP221_Thom_Piper_A1\Private">
       <UniqueIdentifier>{B9982BB6-4001-3B3A-9E85-52D74208A512}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\VGP221_Thom_Piper_A1\Private\Collectibles">
+      <UniqueIdentifier>{3F361F0A-CE73-3040-A912-2B1F08DAA43C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\VGP221_Thom_Piper_A1\Private\Collectibles\Coin.cpp">
+      <Filter>Source\VGP221_Thom_Piper_A1\Private\Collectibles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\VGP221_Thom_Piper_A1\Private\Collectibles\Collectible.cpp">
+      <Filter>Source\VGP221_Thom_Piper_A1\Private\Collectibles</Filter>
+    </ClCompile>
     <Filter Include="Source\VGP221_Thom_Piper_A1\Private\GameMode">
       <UniqueIdentifier>{BE739A85-C542-38F7-950F-8D9736D4A141}</UniqueIdentifier>
     </Filter>
@@ -57,6 +66,12 @@
     <Filter Include="Source\VGP221_Thom_Piper_A1\Private\GUI">
       <UniqueIdentifier>{9A5682F5-DEDC-3D0B-B992-EAC2AB1F2441}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\VGP221_Thom_Piper_A1\Private\GUI\ButtonWidget.cpp">
+      <Filter>Source\VGP221_Thom_Piper_A1\Private\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\VGP221_Thom_Piper_A1\Private\GUI\FPSGameUI.cpp">
+      <Filter>Source\VGP221_Thom_Piper_A1\Private\GUI</Filter>
+    </ClCompile>
     <Filter Include="Source\VGP221_Thom_Piper_A1\Private\GUI\Slate">
       <UniqueIdentifier>{CAEBDA97-7959-3104-8033-DF21C0AD610F}</UniqueIdentifier>
     </Filter>
@@ -90,6 +105,15 @@
     <Filter Include="Source\VGP221_Thom_Piper_A1\Public">
       <UniqueIdentifier>{44D383D3-86F6-39F4-ADE1-73D67E0992F5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\VGP221_Thom_Piper_A1\Public\Collectibles">
+      <UniqueIdentifier>{216D8853-65C0-375C-BD55-BC9A7E7E81D6}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\Collectibles\Coin.h">
+      <Filter>Source\VGP221_Thom_Piper_A1\Public\Collectibles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\Collectibles\Collectible.h">
+      <Filter>Source\VGP221_Thom_Piper_A1\Public\Collectibles</Filter>
+    </ClInclude>
     <Filter Include="Source\VGP221_Thom_Piper_A1\Public\GameMode">
       <UniqueIdentifier>{5CF68260-62A6-376F-B734-D16DA0A02F38}</UniqueIdentifier>
     </Filter>
@@ -99,6 +123,12 @@
     <Filter Include="Source\VGP221_Thom_Piper_A1\Public\GUI">
       <UniqueIdentifier>{F2428139-BD61-3A1C-8D2D-63C0C5C4038A}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\GUI\ButtonWidget.h">
+      <Filter>Source\VGP221_Thom_Piper_A1\Public\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\GUI\FPSGameUI.h">
+      <Filter>Source\VGP221_Thom_Piper_A1\Public\GUI</Filter>
+    </ClInclude>
     <Filter Include="Source\VGP221_Thom_Piper_A1\Public\GUI\Slate">
       <UniqueIdentifier>{1F89BAB1-20DF-38F2-916C-2C6A39CA085B}</UniqueIdentifier>
     </Filter>

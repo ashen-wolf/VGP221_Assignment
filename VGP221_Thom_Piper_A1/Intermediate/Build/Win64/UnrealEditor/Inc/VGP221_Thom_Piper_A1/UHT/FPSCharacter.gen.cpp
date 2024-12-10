@@ -19,6 +19,14 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 	VGP221_THOM_PIPER_A1_API UClass* Z_Construct_UClass_AFPSCharacter_NoRegister();
 	VGP221_THOM_PIPER_A1_API UClass* Z_Construct_UClass_AFPSProjectile_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AFPSCharacter::execDamage)
+	{
+		P_GET_PROPERTY(FFloatProperty,Z_Param_damageAmount);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Damage(Z_Param_damageAmount);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AFPSCharacter::execFire)
 	{
 		P_FINISH;
@@ -60,6 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 	{
 		UClass* Class = AFPSCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "Damage", &AFPSCharacter::execDamage },
 			{ "EndJump", &AFPSCharacter::execEndJump },
 			{ "Fire", &AFPSCharacter::execFire },
 			{ "MoveForward", &AFPSCharacter::execMoveForward },
@@ -67,6 +76,40 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 			{ "Strafe", &AFPSCharacter::execStrafe },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AFPSCharacter_Damage_Statics
+	{
+		struct FPSCharacter_eventDamage_Parms
+		{
+			float damageAmount;
+		};
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_damageAmount;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFPSCharacter_Damage_Statics::NewProp_damageAmount = { "damageAmount", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FPSCharacter_eventDamage_Parms, damageAmount), METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFPSCharacter_Damage_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFPSCharacter_Damage_Statics::NewProp_damageAmount,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFPSCharacter_Damage_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Player/FPSCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFPSCharacter_Damage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFPSCharacter, nullptr, "Damage", nullptr, nullptr, Z_Construct_UFunction_AFPSCharacter_Damage_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AFPSCharacter_Damage_Statics::PropPointers), sizeof(Z_Construct_UFunction_AFPSCharacter_Damage_Statics::FPSCharacter_eventDamage_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AFPSCharacter_Damage_Statics::Function_MetaDataParams), Z_Construct_UFunction_AFPSCharacter_Damage_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AFPSCharacter_Damage_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_AFPSCharacter_Damage_Statics::FPSCharacter_eventDamage_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_AFPSCharacter_Damage()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AFPSCharacter_Damage_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AFPSCharacter_EndJump_Statics
 	{
@@ -240,6 +283,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AFPSCharacter_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFPSCharacter_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AFPSCharacter_Damage, "Damage" }, // 388997278
 		{ &Z_Construct_UFunction_AFPSCharacter_EndJump, "EndJump" }, // 1852443813
 		{ &Z_Construct_UFunction_AFPSCharacter_Fire, "Fire" }, // 1411674628
 		{ &Z_Construct_UFunction_AFPSCharacter_MoveForward, "MoveForward" }, // 3090346662
@@ -328,9 +372,9 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_VGP221_Assignment_VGP221_Thom_Piper_A1_Source_VGP221_Thom_Piper_A1_Public_Player_FPSCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AFPSCharacter, AFPSCharacter::StaticClass, TEXT("AFPSCharacter"), &Z_Registration_Info_UClass_AFPSCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPSCharacter), 1168194674U) },
+		{ Z_Construct_UClass_AFPSCharacter, AFPSCharacter::StaticClass, TEXT("AFPSCharacter"), &Z_Registration_Info_UClass_AFPSCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPSCharacter), 102891107U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_VGP221_Assignment_VGP221_Thom_Piper_A1_Source_VGP221_Thom_Piper_A1_Public_Player_FPSCharacter_h_238756419(TEXT("/Script/VGP221_Thom_Piper_A1"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_VGP221_Assignment_VGP221_Thom_Piper_A1_Source_VGP221_Thom_Piper_A1_Public_Player_FPSCharacter_h_290066211(TEXT("/Script/VGP221_Thom_Piper_A1"),
 		Z_CompiledInDeferFile_FID_Users_User_VGP221_Assignment_VGP221_Thom_Piper_A1_Source_VGP221_Thom_Piper_A1_Public_Player_FPSCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_User_VGP221_Assignment_VGP221_Thom_Piper_A1_Source_VGP221_Thom_Piper_A1_Public_Player_FPSCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

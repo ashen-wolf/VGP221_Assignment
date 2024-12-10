@@ -9,11 +9,13 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeFPSHUD() {}
 // Cross Module References
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AHUD();
 	ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_VGP221_Thom_Piper_A1();
 	VGP221_THOM_PIPER_A1_API UClass* Z_Construct_UClass_AFPSHUD();
 	VGP221_THOM_PIPER_A1_API UClass* Z_Construct_UClass_AFPSHUD_NoRegister();
+	VGP221_THOM_PIPER_A1_API UClass* Z_Construct_UClass_UFPSGameUI_NoRegister();
 // End Cross Module References
 	void AFPSHUD::StaticRegisterNativesAFPSHUD()
 	{
@@ -29,6 +31,14 @@ void EmptyLinkFunctionForGeneratedCodeFPSHUD() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_startingGameWidget_MetaData[];
+#endif
+		static const UECodeGen_Private::FClassPropertyParams NewProp_startingGameWidget;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_gameWidgetContainer_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_gameWidgetContainer;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_CrosshairTexture_MetaData[];
 #endif
@@ -54,6 +64,26 @@ void EmptyLinkFunctionForGeneratedCodeFPSHUD() {}
 	};
 #endif
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFPSHUD_Statics::NewProp_startingGameWidget_MetaData[] = {
+		{ "Category", "FPSHUD" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//UMG\n" },
+#endif
+		{ "ModuleRelativePath", "Public/HUD/FPSHUD.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "UMG" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFPSHUD_Statics::NewProp_startingGameWidget = { "startingGameWidget", nullptr, (EPropertyFlags)0x0014000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFPSHUD, startingGameWidget), Z_Construct_UClass_UClass, Z_Construct_UClass_UFPSGameUI_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFPSHUD_Statics::NewProp_startingGameWidget_MetaData), Z_Construct_UClass_AFPSHUD_Statics::NewProp_startingGameWidget_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFPSHUD_Statics::NewProp_gameWidgetContainer_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/HUD/FPSHUD.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFPSHUD_Statics::NewProp_gameWidgetContainer = { "gameWidgetContainer", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFPSHUD, gameWidgetContainer), Z_Construct_UClass_UFPSGameUI_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFPSHUD_Statics::NewProp_gameWidgetContainer_MetaData), Z_Construct_UClass_AFPSHUD_Statics::NewProp_gameWidgetContainer_MetaData) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFPSHUD_Statics::NewProp_CrosshairTexture_MetaData[] = {
 		{ "Category", "FPSHUD" },
 		{ "ModuleRelativePath", "Public/HUD/FPSHUD.h" },
@@ -61,6 +91,8 @@ void EmptyLinkFunctionForGeneratedCodeFPSHUD() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFPSHUD_Statics::NewProp_CrosshairTexture = { "CrosshairTexture", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFPSHUD, CrosshairTexture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFPSHUD_Statics::NewProp_CrosshairTexture_MetaData), Z_Construct_UClass_AFPSHUD_Statics::NewProp_CrosshairTexture_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFPSHUD_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPSHUD_Statics::NewProp_startingGameWidget,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPSHUD_Statics::NewProp_gameWidgetContainer,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPSHUD_Statics::NewProp_CrosshairTexture,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFPSHUD_Statics::StaticCppClassTypeInfo = {
@@ -102,9 +134,9 @@ void EmptyLinkFunctionForGeneratedCodeFPSHUD() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_VGP221_Assignment_VGP221_Thom_Piper_A1_Source_VGP221_Thom_Piper_A1_Public_HUD_FPSHUD_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AFPSHUD, AFPSHUD::StaticClass, TEXT("AFPSHUD"), &Z_Registration_Info_UClass_AFPSHUD, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPSHUD), 4290507577U) },
+		{ Z_Construct_UClass_AFPSHUD, AFPSHUD::StaticClass, TEXT("AFPSHUD"), &Z_Registration_Info_UClass_AFPSHUD, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPSHUD), 59662872U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_VGP221_Assignment_VGP221_Thom_Piper_A1_Source_VGP221_Thom_Piper_A1_Public_HUD_FPSHUD_h_223509897(TEXT("/Script/VGP221_Thom_Piper_A1"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_VGP221_Assignment_VGP221_Thom_Piper_A1_Source_VGP221_Thom_Piper_A1_Public_HUD_FPSHUD_h_2114808212(TEXT("/Script/VGP221_Thom_Piper_A1"),
 		Z_CompiledInDeferFile_FID_Users_User_VGP221_Assignment_VGP221_Thom_Piper_A1_Source_VGP221_Thom_Piper_A1_Public_HUD_FPSHUD_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_User_VGP221_Assignment_VGP221_Thom_Piper_A1_Source_VGP221_Thom_Piper_A1_Public_HUD_FPSHUD_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

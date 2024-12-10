@@ -3,6 +3,14 @@
 
 #include "HUD/FPSHUD.h"
 
+void AFPSHUD::BeginPlay()
+{
+	Super::BeginPlay();
+
+	//ShowSettingsMenu();
+	ShowGameMenu(startingGameWidget);
+}
+
 void AFPSHUD::DrawHUD()
 {
 	Super::DrawHUD();
@@ -24,8 +32,38 @@ void AFPSHUD::DrawHUD()
 
 void AFPSHUD::ShowSettingsMenu()
 {
+	if (GEngine && GEngine->GameViewport) {
+		settingsWidget = SNew(SSettingsWidget).OwningHUD(this);
+		GEngine->GameViewport->AddViewportWidgetContent(SAssignNew(settingsWidgetContainer, SWeakWidget).PossiblyNullContent(settingsWidget.ToSharedRef()));
+		if (PlayerOwner) {
+			PlayerOwner->bShowMouseCursor = true;
+			PlayerOwner->SetInputMode(FInputModeUIOnly());
+		}
+	}
 }
 
 void AFPSHUD::RemoveSettingsMenu()
 {
+	if (GEngine && GEngine->GameViewport && settingsWidgetContainer.IsValid()) {
+		settingsWidget = SNew(SSettingsWidget).OwningHUD(this);
+		GEngine->GameViewport->RemoveViewportWidgetContent(settingsWidgetContainer.ToSharedRef());
+		if (PlayerOwner) {
+			PlayerOwner->bShowMouseCursor = false;
+			PlayerOwner->SetInputMode(FInputModeGameOnly());
+		}
+	}
 }
+
+void AFPSHUD::ShowGameMenu(TSubclassOf<UFPSGameUI> newGameWidget)
+{
+	if (gameWidgetContainer) {
+		gameWidgetContainer->RemoveFromParent();
+		gameWidgetContainer = nullptr;
+	}
+	if (newGameWidget) {
+		gameWidgetContainer = CreateWidget<UFPSGameUI>(GetWorld(), newGameWidget);
+		gameWidgetContainer->AddToViewport();
+	}
+}
+
+

@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\user\\vgp221_assignment\\vgp221_thom_piper_a1\\intermediate\\build\\win64\\unrealeditor\\inc\\vgp221_thom_piper_a1\\uht\\collectible.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\user\\vgp221_assignment\\vgp221_thom_piper_a1\\intermediate\\build\\win64\\x64\\vgp221_thom_piper_a1editor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\user\\vgp221_assignment\\vgp221_thom_piper_a1\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\vgp221_thom_piper_a1\\definitions.vgp221_thom_piper_a1.h",
+            "c:\\users\\user\\vgp221_assignment\\vgp221_thom_piper_a1\\source\\vgp221_thom_piper_a1\\public\\collectibles\\collectible.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\components\\spherecomponent.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\spherecomponent.generated.h",
+            "c:\\users\\user\\vgp221_assignment\\vgp221_thom_piper_a1\\intermediate\\build\\win64\\unrealeditor\\inc\\vgp221_thom_piper_a1\\uht\\collectible.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

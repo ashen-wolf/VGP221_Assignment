@@ -35,7 +35,8 @@ AFPSCharacter::AFPSCharacter()
 void AFPSCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	Health = MaxHealth;
+	HUD = UGameplayStatics::GetPlayerController(this, 0)->GetHUD<AFPSHUD>();
 }
 
 // Called every frame
@@ -119,6 +120,19 @@ void AFPSCharacter::Fire()
 		
 		
 	}
+
+	//Minus health from UI
+	Damage(10.0f);
+}
+
+void AFPSCharacter::Damage(float damageAmount)
+{
+	if (!HUD) return;
+
+	Health -= 10;
+	float HealthPercent = Health / MaxHealth;
+
+	HUD->gameWidgetContainer->SetHealthBar(HealthPercent);
 }
 
 
