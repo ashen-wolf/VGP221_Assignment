@@ -58,7 +58,6 @@ void AFPSCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 	PlayerInputComponent->BindAxis("LookHorizontal", this, &AFPSCharacter::AddControllerYawInput);
 	PlayerInputComponent->BindAxis("LookVertical", this, &AFPSCharacter::AddControllerPitchInput);
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AFPSCharacter::StartJump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AFPSCharacter::StartJump);
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AFPSCharacter::Fire);
 }
 
@@ -117,20 +116,28 @@ void AFPSCharacter::Fire()
 		// Set the projectile's initial trajectory.
 		FVector LaunchDirection = MuzzleRotation.Vector();
 		Projectile->FireInDirection(LaunchDirection);
+		FVector PlayerLaunchDirection = -LaunchDirection;
+
+		this->GetCharacterMovement()->AddImpulse(PlayerLaunchDirection * LaunchPower + GetActorUpVector()*LaunchUpPower, true);
 		
 		
 	}
 
 	//Minus health from UI
-	Damage(10.0f);
+	//Damage(10.0f);
 }
 
 void AFPSCharacter::Damage(float damageAmount)
 {
 	if (!HUD) return;
 
-	Health -= 10;
+	Health -= damageAmount;
+
+	if (Health > MaxHealth)
+		Health = MaxHealth;
+
 	float HealthPercent = Health / MaxHealth;
+
 
 	HUD->gameWidgetContainer->SetHealthBar(HealthPercent);
 }

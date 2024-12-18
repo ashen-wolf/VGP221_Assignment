@@ -57,6 +57,9 @@
     <ClCompile Include="..\..\Source\VGP221_Thom_Piper_A1\Private\Collectibles\Collectible.cpp">
       <Filter>Source\VGP221_Thom_Piper_A1\Private\Collectibles</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\VGP221_Thom_Piper_A1\Private\Collectibles\HealthPickup.cpp">
+      <Filter>Source\VGP221_Thom_Piper_A1\Private\Collectibles</Filter>
+    </ClCompile>
     <Filter Include="Source\VGP221_Thom_Piper_A1\Private\GameMode">
       <UniqueIdentifier>{BE739A85-C542-38F7-950F-8D9736D4A141}</UniqueIdentifier>
     </Filter>
@@ -90,6 +93,15 @@
     <ClCompile Include="..\..\Source\VGP221_Thom_Piper_A1\Private\HUD\FPSHUD.cpp">
       <Filter>Source\VGP221_Thom_Piper_A1\Private\HUD</Filter>
     </ClCompile>
+    <Filter Include="Source\VGP221_Thom_Piper_A1\Private\Obstacles">
+      <UniqueIdentifier>{F07D0144-1D59-350F-8CF1-421FF43526C7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\VGP221_Thom_Piper_A1\Private\Obstacles\Turrets">
+      <UniqueIdentifier>{81B1DF9C-2D5A-365B-B314-9E215DE4FDC7}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\VGP221_Thom_Piper_A1\Private\Obstacles\Turrets\BasicTurret.cpp">
+      <Filter>Source\VGP221_Thom_Piper_A1\Private\Obstacles\Turrets</Filter>
+    </ClCompile>
     <Filter Include="Source\VGP221_Thom_Piper_A1\Private\Player">
       <UniqueIdentifier>{046AA259-E02A-3AB0-8426-0F48014CCADC}</UniqueIdentifier>
     </Filter>
@@ -112,6 +124,9 @@
       <Filter>Source\VGP221_Thom_Piper_A1\Public\Collectibles</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\Collectibles\Collectible.h">
+      <Filter>Source\VGP221_Thom_Piper_A1\Public\Collectibles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\Collectibles\HealthPickup.h">
       <Filter>Source\VGP221_Thom_Piper_A1\Public\Collectibles</Filter>
     </ClInclude>
     <Filter Include="Source\VGP221_Thom_Piper_A1\Public\GameMode">
@@ -146,6 +161,15 @@
     </Filter>
     <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\HUD\FPSHUD.h">
       <Filter>Source\VGP221_Thom_Piper_A1\Public\HUD</Filter>
+    </ClInclude>
+    <Filter Include="Source\VGP221_Thom_Piper_A1\Public\Obstacles">
+      <UniqueIdentifier>{65470FE5-E515-31D5-B7DE-DE0F92234F56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\VGP221_Thom_Piper_A1\Public\Obstacles\Turrets">
+      <UniqueIdentifier>{6FDF4218-85D4-3162-9A53-8C0086346088}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\Obstacles\Turrets\BasicTurret.h">
+      <Filter>Source\VGP221_Thom_Piper_A1\Public\Obstacles\Turrets</Filter>
     </ClInclude>
     <Filter Include="Source\VGP221_Thom_Piper_A1\Public\Player">
       <UniqueIdentifier>{D1498536-4F1C-39FE-826B-636FDE9A30CB}</UniqueIdentifier>

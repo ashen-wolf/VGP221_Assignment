@@ -137,6 +137,11 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\VGP221_Thom_Piper_A1\Private\Collectibles\HealthPickup.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\VGP221_Thom_Piper_A1\Private\GameMode\FPSGameMode.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -167,6 +172,11 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\VGP221_Thom_Piper_A1\Private\Obstacles\Turrets\BasicTurret.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\VGP221_Thom_Piper_A1\Private\Player\FPSCharacter.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -179,12 +189,14 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\Collectibles\Coin.h"/>
     <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\Collectibles\Collectible.h"/>
+    <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\Collectibles\HealthPickup.h"/>
     <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\GameMode\FPSGameMode.h"/>
     <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\GUI\ButtonWidget.h"/>
     <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\GUI\FPSGameUI.h"/>
     <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\GUI\Slate\PleaseWork.h"/>
     <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\GUI\Slates\SSettingsWidget.h"/>
     <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\HUD\FPSHUD.h"/>
+    <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\Obstacles\Turrets\BasicTurret.h"/>
     <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\Player\FPSCharacter.h"/>
     <ClInclude Include="..\..\Source\VGP221_Thom_Piper_A1\Public\Projectile\FPSProjectile.h"/>
   </ItemGroup>

@@ -9,6 +9,7 @@
 #include "Projectile/FPSProjectile.h"
 #include "Kismet/GameplayStatics.h"
 #include "HUD/FPSHUD.h"
+#include "Gameframework/CharacterMovementComponent.h" 
 #include "FPSCharacter.generated.h"
 
 
@@ -43,6 +44,12 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Projectile")
 	TSubclassOf<class AFPSProjectile> ProjectileClass;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Gameplayer")
+	float LaunchPower = 200;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Gameplayer")
+	float LaunchUpPower = 2.5;
 
 	UFUNCTION()
 	void MoveForward(float value);

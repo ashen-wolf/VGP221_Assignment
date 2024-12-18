@@ -21,9 +21,10 @@ void EmptyLinkFunctionForGeneratedCodeCollectible() {}
 // End Cross Module References
 	DEFINE_FUNCTION(ACollectible::execOnCollect)
 	{
+		P_GET_OBJECT(AActor,Z_Param_OtherActor);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->OnCollect();
+		P_THIS->OnCollect(Z_Param_OtherActor);
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(ACollectible::execBeginOverlap)
@@ -133,17 +134,29 @@ void EmptyLinkFunctionForGeneratedCodeCollectible() {}
 	}
 	struct Z_Construct_UFunction_ACollectible_OnCollect_Statics
 	{
+		struct Collectible_eventOnCollect_Parms
+		{
+			AActor* OtherActor;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_OtherActor;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ACollectible_OnCollect_Statics::NewProp_OtherActor = { "OtherActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(Collectible_eventOnCollect_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ACollectible_OnCollect_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACollectible_OnCollect_Statics::NewProp_OtherActor,
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACollectible_OnCollect_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Public/Collectibles/Collectible.h" },
 	};
 #endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ACollectible_OnCollect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACollectible, nullptr, "OnCollect", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ACollectible_OnCollect_Statics::Function_MetaDataParams), Z_Construct_UFunction_ACollectible_OnCollect_Statics::Function_MetaDataParams) };
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ACollectible_OnCollect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACollectible, nullptr, "OnCollect", nullptr, nullptr, Z_Construct_UFunction_ACollectible_OnCollect_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ACollectible_OnCollect_Statics::PropPointers), sizeof(Z_Construct_UFunction_ACollectible_OnCollect_Statics::Collectible_eventOnCollect_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ACollectible_OnCollect_Statics::Function_MetaDataParams), Z_Construct_UFunction_ACollectible_OnCollect_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ACollectible_OnCollect_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_ACollectible_OnCollect_Statics::Collectible_eventOnCollect_Parms) < MAX_uint16);
 	UFunction* Z_Construct_UFunction_ACollectible_OnCollect()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -180,7 +193,7 @@ void EmptyLinkFunctionForGeneratedCodeCollectible() {}
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ACollectible_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_ACollectible_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ACollectible_BeginOverlap, "BeginOverlap" }, // 2433325191
-		{ &Z_Construct_UFunction_ACollectible_OnCollect, "OnCollect" }, // 1849732894
+		{ &Z_Construct_UFunction_ACollectible_OnCollect, "OnCollect" }, // 298648623
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ACollectible_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -238,9 +251,9 @@ void EmptyLinkFunctionForGeneratedCodeCollectible() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_VGP221_Assignment_VGP221_Thom_Piper_A1_Source_VGP221_Thom_Piper_A1_Public_Collectibles_Collectible_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ACollectible, ACollectible::StaticClass, TEXT("ACollectible"), &Z_Registration_Info_UClass_ACollectible, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACollectible), 234758541U) },
+		{ Z_Construct_UClass_ACollectible, ACollectible::StaticClass, TEXT("ACollectible"), &Z_Registration_Info_UClass_ACollectible, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACollectible), 617044979U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_VGP221_Assignment_VGP221_Thom_Piper_A1_Source_VGP221_Thom_Piper_A1_Public_Collectibles_Collectible_h_2977046313(TEXT("/Script/VGP221_Thom_Piper_A1"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_VGP221_Assignment_VGP221_Thom_Piper_A1_Source_VGP221_Thom_Piper_A1_Public_Collectibles_Collectible_h_618521321(TEXT("/Script/VGP221_Thom_Piper_A1"),
 		Z_CompiledInDeferFile_FID_Users_User_VGP221_Assignment_VGP221_Thom_Piper_A1_Source_VGP221_Thom_Piper_A1_Public_Collectibles_Collectible_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_User_VGP221_Assignment_VGP221_Thom_Piper_A1_Source_VGP221_Thom_Piper_A1_Public_Collectibles_Collectible_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
